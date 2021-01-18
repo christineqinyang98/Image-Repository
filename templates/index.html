@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Christine's Boutique</title>
+    <link rel="stylesheet" type="text/css" href="static/css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+</head>
+<body>
+    <script src="home.js"></script>
+
+    <h1>Christine's Boutique</h1>
+    <form action="" method="post">
+        Search By:<br>
+                  <select name="courseNum" id="courseNum">
+                      <option value="">Select Here</option>
+                      <option value="">Jackets</option>
+                      <option value="">Pants</option>
+                      <option value="">Shirts</option>
+                  </select><br>
+    </form>
+    <hr>
+    {% for item in items %}
+    <tr>
+        <img src='{{item["src"]}}' /><br />
+        {{item["name"]}}
+        {{item["price"]}}
+        {{item["stock"]}}<br />
+    </tr>
+    {% endfor %}
+</body>
+</html>

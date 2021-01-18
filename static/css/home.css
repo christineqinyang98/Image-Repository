@@ -1,0 +1,23 @@
+body {
+    font-family: 'Mali', Calibri;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+select {
+    font-family: 'Charmonman', Calibri;
+    background-color: wheat;
+}
+
+table, th, td {
+    vertical-align: top;
+}
+
+img {
+    vertical-align: top;
+}
